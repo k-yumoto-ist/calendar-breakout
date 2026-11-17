@@ -11,8 +11,9 @@
 
 https://k-yumoto-ist.github.io/calendar-breakout/
 
-GitHub Settings → Pagesで「Deploy from a branch」、`main` / `/(root)` を指定します。
-ビルド不要。mainの変更はGitHub Pagesに自動反映されます。
+GitHub Settings → Pages → Build and deployment → Sourceで **GitHub Actions** を選択してください（初回のみ）。
+
+以後は `main` へのpushで `.github/workflows/pages.yml` が実行され、JavaScript構文チェック後にGitHub Pagesへ自動公開されます。Actionsタブの「Deploy GitHub Pages」から手動実行も可能です。失敗した場合は設定変更後に「Re-run all jobs」で再実行してください。
 
 ## ローカル起動
 
